@@ -81,7 +81,7 @@ function FirstScreen() {
         {resData.rows?.length ? (
           renderTable()
         ) : (
-          <p>There are no records for this account</p>
+          <h5>There are no records for this account</h5>
         )}
       </>
       <hr />

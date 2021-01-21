@@ -8,6 +8,8 @@ function LoginPage(props) {
   const [password, setPassword] = useState("");
   const [logError, setLogError] = useState("");
 
+  localStorage.removeItem("jwtSecret");
+
   const newAxios = axios.create({
     baseURL: "http://15.206.118.222:5000/admin",
   });
