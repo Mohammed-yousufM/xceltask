@@ -12,7 +12,7 @@ function App() {
         flex: 1,
       }}
     >
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes />
       </BrowserRouter>
     </div>
